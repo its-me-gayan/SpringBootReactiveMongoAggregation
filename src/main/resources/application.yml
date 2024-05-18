@@ -1,0 +1,19 @@
+server:
+  port : 8081
+  shutdown : graceful
+spring:
+  cloud:
+    config:
+      enabled: false
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: gayan-test-db
+  jpa:
+    show-sql: true
+
+logging:
+  level:
+    org:
+      springframework: TRACE
